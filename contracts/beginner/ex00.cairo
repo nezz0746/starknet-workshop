@@ -9,6 +9,10 @@ from starkware.starknet.common.syscalls import get_caller_address
 # https://www.cairo-lang.org/docs/hello_starknet/intro.html
 # https://www.cairo-lang.org/docs/hello_starknet/user_auth.html#storage-maps
 
+@storage_var
+func dust(address: felt) -> (amount: felt):
+end
+
 # This code block define an `external` function
 # It can be called by other contracts (wallet or other)
 @external
